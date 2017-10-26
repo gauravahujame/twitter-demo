@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/post',function(req, res){
-    var id = req.body.id;
+    var id = req.query.id;
     var data = {
         "error": 1,
         "posts": ""
